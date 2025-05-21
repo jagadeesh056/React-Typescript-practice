@@ -2,6 +2,9 @@
 // import { PersonObj } from './components/PersonObj';
 // import { PersonList } from './components/PersonList';
 import './App.css';
+import { Greet } from './components/Greet';
+import { Heading } from './components/Heading';
+import { Oscar } from './components/Oscar';
 import { Status } from './components/Status';
 
 function App() {
@@ -26,7 +29,12 @@ function App() {
   // ]
   return (
     <div className="App">
-     <Status status="suc" />
+     <Status status="success" />
+     <Greet name='Vishwas' isLoggedIn={true} />
+     <Heading>This is heading </Heading>
+     <Oscar>
+       <Heading>Oscar show is on 24th May</Heading>
+     </Oscar>
     </div>
   );
 }
