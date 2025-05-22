@@ -2,6 +2,7 @@
 // import { PersonObj } from './components/PersonObj';
 // import { PersonList } from './components/PersonList';
 import './App.css';
+import { Button } from './components/Button';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
@@ -35,6 +36,9 @@ function App() {
      <Oscar>
        <Heading>Oscar show is on 24th May</Heading>
      </Oscar>
+     <Button handleClick={(event, id) => {
+      console.log("button clicked", event, id)
+     }} />
     </div>
   );
 }
